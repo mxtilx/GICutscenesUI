@@ -223,42 +223,44 @@
 	<div class="tabcontent" id="subtitles_customize">
 		<h3 align="center" translation="__subtitles_customization_header__">Customize Subtitles</h3>
 		<p><img src="" id="subtitles_preview"></p>
-		<div class="subtitles-customize">
-			<i class="fa-solid fa-a"></i>
-			<label translation="__subtitles_font__">Font:</label>
-			<select class="input_element settings_element subtitles_setting" name="subtitles_font" id="subtitles_font" style="width:fit-content;">
-				<option value="" selected translation="__subtitles_font_default__">Default</option>
-			</select>
+		<div class="section-card">
+			<div class="section-body">
+				<i class="fa-solid fa-a"></i>
+				<label translation="__subtitles_font__">Font:</label>
+				<select class="input_element settings_element subtitles_setting" name="subtitles_font" id="subtitles_font" style="width:fit-content;">
+					<option value="" selected translation="__subtitles_font_default__">Default</option>
+				</select>
 
-			<i class="fa-solid fa-text-height"></i>
-			<label translation="__subtitles_font_size__">Font size:</label>
-			<div style="display: flex; gap: 5px;">
-				<input type="number" class="input_element settings_element subtitles_setting" name="subtitles_fontsize" value="14" min="4" max="64" step="1" style="width:fit-content;">
-				<label class="input_element text_style_btn" translation="__title:subtitles_bold__">
-					<input type="checkbox" class="settings_element subtitles_setting" name="subtitles_bold">
-					<i class="fa-solid fa-bold"></i>
-				</label>
-				<label class="input_element text_style_btn" translation="__title:subtitles_italic__">
-					<input type="checkbox" class="settings_element subtitles_setting" name="subtitles_italic">
-					<i class="fa-solid fa-italic"></i>
-				</label>
+				<i class="fa-solid fa-text-height"></i>
+				<label translation="__subtitles_font_size__">Font size:</label>
+				<div style="display: flex; gap: 5px;">
+					<input type="number" class="input_element settings_element subtitles_setting" name="subtitles_fontsize" value="14" min="4" max="64" step="1" style="width:fit-content;">
+					<label class="input_element text_style_btn" translation="__title:subtitles_bold__">
+						<input type="checkbox" class="settings_element subtitles_setting" name="subtitles_bold">
+						<i class="fa-solid fa-bold"></i>
+					</label>
+					<label class="input_element text_style_btn" translation="__title:subtitles_italic__">
+						<input type="checkbox" class="settings_element subtitles_setting" name="subtitles_italic">
+						<i class="fa-solid fa-italic"></i>
+					</label>
+				</div>
+
+				<i class="fa-solid fa-fill-drip"></i>
+				<label translation="__subtitles_text_color__">Text color:</label>
+				<input type="color" name="subtitles_text_color" class="settings_element subtitles_setting" value="#ffffff">
+
+				<i class="fa-solid fa-border-all"></i>
+				<label translation="__subtitles_outline_color__">Outline color:</label>
+				<input type="color" name="subtitles_outline_color" class="settings_element subtitles_setting" value="#000000">
+
+				<i class="fa-solid fa-arrows-left-right-to-line"></i>
+				<label translation="__subtitles_outline_width__">Outline width:</label>
+				<input type="number" name="subtitles_outline_width" class="input_element settings_element subtitles_setting" min="0" max="10" step="0.5" value="1" style="width:fit-content">
+
+				<i class="fa-solid fa-text-width"></i>
+				<label translation="__subtitles_letter_spacing__">Letter spacing:</label>
+				<input type="number" name="subtitles_letter_spacing" class="input_element settings_element subtitles_setting" min="0" max="10" step="0.5" value="0" style="width:fit-content">
 			</div>
-
-			<i class="fa-solid fa-fill-drip"></i>
-			<label translation="__subtitles_text_color__">Text color:</label>
-			<input type="color" name="subtitles_text_color" class="settings_element subtitles_setting" value="#ffffff">
-
-			<i class="fa-solid fa-border-all"></i>
-			<label translation="__subtitles_outline_color__">Outline color:</label>
-			<input type="color" name="subtitles_outline_color" class="settings_element subtitles_setting" value="#000000">
-
-			<i class="fa-solid fa-arrows-left-right-to-line"></i>
-			<label translation="__subtitles_outline_width__">Outline width:</label>
-			<input type="number" name="subtitles_outline_width" class="input_element settings_element subtitles_setting" min="0" max="10" step="0.5" value="1" style="width:fit-content">
-
-			<i class="fa-solid fa-text-width"></i>
-			<label translation="__subtitles_letter_spacing__">Letter spacing:</label>
-			<input type="number" name="subtitles_letter_spacing" class="input_element settings_element subtitles_setting" min="0" max="10" step="0.5" value="0" style="width:fit-content">
 		</div>
 		<p align="center">
 			<button onclick="exportSettings();openTab('settings')"

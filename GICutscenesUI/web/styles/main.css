@@ -367,19 +367,6 @@ input[type="range" i]{
 	pointer-events: none;
 }
 
-.subtitles-area {
-	width: min-content;
-}
-.subtitles-customize {
-	display: grid;
-	grid-template-columns: auto auto 1fr;
-	align-items: center;
-	white-space: nowrap;
-	gap: 10px;
-}
-.subtitles-customize i {
-	justify-self: center;
-}
 #provider_local, #provider_url {
 	display: none;
 	grid-column: 3;
