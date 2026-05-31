@@ -4,17 +4,19 @@
 	await getTranslation()
 	get_output_folder()
 	get_subtitles_folder()
-	get_all_fonts()
-	get_encoders()
-	load_settings(["subtitles_font", "gpu"])
-	init_subtitles_preview()
 	let tab_now = window.location.hash.split("#").at(-1)
 	if (tab_now){
 		openTab(tab_now)
 	}
+	setTimeout(async _=>{
+		await get_all_fonts()
+		await get_encoders()
+		load_settings(["subtitles_font", "gpu"])
+		init_subtitles_preview()
+	}, 0)
 	setTimeout(_=>{
 		document.querySelector("#loader-area").classList.add("hidden")
-	}, 50)
+	}, 100)
 })()
 
 function openTab(tab){

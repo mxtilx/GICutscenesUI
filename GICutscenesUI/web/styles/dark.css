@@ -81,3 +81,15 @@
 .dark .popup button {
 	--btn-color: rgba(0, 0, 0, 0.75);
 }
+
+.dark .section-card {
+	background: #30302e;
+	border: 1px solid #4a4a46;
+}
+.dark .section-header {
+	border-bottom: 1px solid #4a4a46;
+}
+
+.dark .toggle-slider {
+	background: #65645f;
+}

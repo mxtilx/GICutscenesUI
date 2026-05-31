@@ -1,4 +1,6 @@
 async function load_settings(keys=null){
+	init_quality_slider()
+
 	let settings = await eel.load_settings()()
 	if (keys){
 		settings = Object.fromEntries(Object.entries(settings).filter(([key]) => keys.includes(key)))
@@ -19,6 +21,15 @@ async function load_settings(keys=null){
 			}
 			el.dispatchEvent(new Event("change"))
 		}
+	})
+}
+function init_quality_slider(){
+	const quality_input = document.querySelector('.settings_element[name="video_quality"]');
+	const quality_value = document.querySelector("#quality-value");
+	["input", "change"].forEach(ev=>{
+		quality_input.addEventListener(ev, e=>{
+			quality_value.textContent = e.target.value
+		})
 	})
 }
 async function exportSettings(){
