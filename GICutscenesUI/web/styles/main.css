@@ -366,6 +366,9 @@ input[type="range" i]{
 	opacity: 0.5;
 	pointer-events: none;
 }
+.section-body > .section-card {
+	margin-bottom: 0;
+}
 
 #provider_local, #provider_url {
 	display: none;
