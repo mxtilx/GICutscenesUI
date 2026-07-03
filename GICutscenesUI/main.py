@@ -13,7 +13,7 @@ import requests
 from subtitles import *
 
 CONSOLE_DEBUG_MODE = False
-__version__ = '0.10.0'
+__version__ = '0.10.1'
 
 # ---- Required Functions ----
 
