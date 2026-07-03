@@ -18,7 +18,7 @@ def find_subtitles(name, lang, provider):
 			repository = match.group(3)
 
 			if site == "gitlab":
-				url = f"https://gitlab.com/{author}/{repository}/raw/master/Subtitle/{lang}/{filename}"
+				url = f"https://gitlab.com/{author}/{repository}/raw/main/Subtitle/{lang}/{filename}"
 			elif site == "github":
 				url = f"https://raw.githubusercontent.com/{author}/{repository}/main/Subtitle/{lang}/{filename}"
 		else:
